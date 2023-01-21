@@ -17,6 +17,10 @@ public class BasicNavigation {
         //2.Create instance of the selenium WebDriver
         // this is the line opening an empty browser
         WebDriver driver = new ChromeDriver();
+
+        //this will maximize the browser size
+        driver.manage().window().maximize();
+
         //3. Go to "https://www.tesla.com"
         driver.get("https://tesla.com");
 
@@ -60,6 +64,8 @@ public class BasicNavigation {
 
         String getCurrentUrl= driver.getCurrentUrl();
         System.out.println("CurrentURL=" + getCurrentUrl);
+
+
 
     }
 }
