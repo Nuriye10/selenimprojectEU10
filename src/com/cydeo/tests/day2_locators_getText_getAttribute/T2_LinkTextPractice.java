@@ -32,7 +32,19 @@ public class T2_LinkTextPractice {
          abTestLink.click();
 
         //4.Verify title is:
+
+
+
         //Expected: NO A/B test
+
+        String expectedTitle= "No A/B Test";
+        String actualTitle = driver.getTitle();
+
+        if(actualTitle.equals(expectedTitle)){
+            System.out.println("Title verification PASS!");
+        }else {
+            System.out.println("Title verification FAILED!!!");
+        }
         //5.Go back to home page by using the .back();
         //6.Verify title equals:
         // Expected :Practice
