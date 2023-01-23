@@ -3,6 +3,7 @@ package com.cydeo.tests.day2_locators_getText_getAttribute;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class T2_LinkTextPractice {
@@ -24,9 +25,11 @@ public class T2_LinkTextPractice {
           driver.get("https://practice.cydeo.com");
 
         //3.Click to A/B testing from top of the list.
+        //Thread.sleep(2000);
+        //driver.findElement(By.linkText("A/B Testing")).click();
 
-        driver.findElement(By.linkText())
-
+        WebElement abTestLink= driver.findElement(By.linkText("A/B Testing"));
+         abTestLink.click();
 
         //4.Verify title is:
         //Expected: NO A/B test
