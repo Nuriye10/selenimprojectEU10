@@ -65,7 +65,9 @@ public class BasicNavigation {
         String getCurrentUrl= driver.getCurrentUrl();
         System.out.println("CurrentURL=" + getCurrentUrl);
 
+      driver.close();
 
+      driver.quit();
 
     }
 }
