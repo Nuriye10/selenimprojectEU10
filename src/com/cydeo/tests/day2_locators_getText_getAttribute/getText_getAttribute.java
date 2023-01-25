@@ -30,6 +30,14 @@ public class getText_getAttribute {
        }else{
            System.out.println("Header text verification FAILED!!!");
        }
+
+       //4.
+        WebElement firstNameInput=driver.findElement(By.name("First name"));
+       //5.
+
+        String expectedPlaceHolder = "first name";
+        String actualPlaceHolder =firstNameInput.getAttribute("placeholder");
+
     }
 
 
