@@ -9,7 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Task4_LibraryLogInPage {
 
     public static void main(String[] args) {
-     //TC.4. Library  verification.
+
+
+
+
+
 
        // 1.open Chrome browser
 
@@ -34,7 +38,14 @@ public class Task4_LibraryLogInPage {
         usernameInput.sendKeys("incorrect@emai.com");
 
      //4.Enter password:"incorrect password"
-     //5.Click to sign in button.
+        WebElement passwordInput = driver.findElement(By.id("inputPassword"));
+        passwordInput.sendKeys("incorrect password");
+
+
+        //5.Click to sign in button.
+       WebElement singInButton = driver.findElement(By.tagName( "button"));
+       singInButton.click();
+
      //6.Verify:visually "Sorry,Wrong Email or Password"
 
 
