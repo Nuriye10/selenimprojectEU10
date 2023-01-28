@@ -26,7 +26,13 @@ public class T1_locators_getText {
 
 
        //4.Enter incorrect password:"incorrect"
-       //5.Click to log in   button.
+        //to auto generate local variable
+       //window; alt +  enter
+        WebElement inputPassword = driver.findElement(By.name("USER_PASSWORD"));
+         inputPassword.sendKeys("incorrect");
+        //5.Click to log in   button.
+        WebElement loginButton =driver.findElement(By.className("login-btn"));
+        loginButton.click();
         //6. Verify error message text is as expected:
         //Expected: Incorrect login or password
 
