@@ -48,9 +48,16 @@ public class T1_xpath_cssSelector_practice{
         //f.Powered by Cydeo text
           WebElement poweredByCydeoText = driver.findElement(By.xpath("//div[@style='text-align: center]"));
 
-        //4. Verify all web elements are displayed
+        //4. Verify all web elements are displayed.
 
+        System.out.println("homeLink_ex1.isDisplayed()="+homeLink_ex1.isDisplayed());
+        System.out.println("header_ex1.isDisplayed() = " + header_ex1.isDisplayed());
+        System.out.println("emailLabel.isDisplayed() = " + emailLabel.isDisplayed());
+        System.out.println("inputBox_ex1.isDisplayed() = " + inputBox_ex1.isDisplayed());
+        System.out.println("retrievePasswordBtn.isDisplayed() = " + retrievePasswordBtn.isDisplayed());
+        System.out.println("poweredByCydeoText.isDisplayed() = " + poweredByCydeoText.isDisplayed());
 
+        driver.close();
     }
 
 

@@ -32,11 +32,21 @@ public class getText_getAttribute {
        }
 
        //4.
-        WebElement firstNameInput=driver.findElement(By.name("First name"));
+        WebElement firstNameInput=driver.findElement(By.name("first name"));
        //5.
 
         String expectedPlaceHolder = "first name";
         String actualPlaceHolder =firstNameInput.getAttribute("placeholder");
+
+        if(actualPlaceHolder.equals(expectedPlaceHolder)){
+            System.out.println("Placeholder text verification PASSED!");
+        }else{
+            System.out.println("Placeholder text verification FAILED!!!");
+
+            driver.close();
+        }
+
+
 
     }
 
