@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
+
+
 public class T6_StaleElementTest {
 
     public static void main(String[] args) {
