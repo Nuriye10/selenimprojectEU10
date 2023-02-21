@@ -1,5 +1,6 @@
 package com.cydeo.test.day5_testNG_intro_dropdown;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class TestNG_intro1 {
@@ -27,6 +28,12 @@ public class TestNG_intro1 {
     @Test
     public void test1(){
         System.out.println("Test 1 is running...");
+
+        //ASSERT EQUALS : compare 2 of the same things
+        String actual ="apple";
+        String expected ="apple";
+
+        Assert.assertEquals("actual","actual" );
 
 
     }
