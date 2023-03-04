@@ -34,7 +34,30 @@ public class T3_CRM_LOGIN {
 
         WebElement loginButton = driver.findElement(By.xpath("//input[@value='Log In']"));
         loginButton.click();
+
+       BrowserUtils.verifyTitle(driver,"Portal");
+
     }
+
+
+    @Test
+    public void crm_login_test2(){
+        driver.get("https://login1.nextbasecrm.com/");
+        CRM_Utilities.crm_login(driver,"helpdesk2@cybertekschool.com","UserUser");
+
+        BrowserUtils.verifyTitle(driver,"(2)Portal");
+
+
+
+
+    }
+
+
+
+
+
+
+
 
 
 
