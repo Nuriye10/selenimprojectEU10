@@ -9,6 +9,9 @@ import java.util.Set;
 public class BrowserUtils {
     private static CharSequence expectedInTitle;
     private static Predicates actualTitle;
+
+    public static void verifyTitle(WebDriver driver, String portal) {
+    }
     /*
     This method will accept int (in second) and execute  Thread.sleep for given duration
      */
